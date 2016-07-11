@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Engineer a world <br /> to be a better place!
+title: Engineer the world <br /> to be a better place!
 tagline: Supporting tagline
 ---
 {% include JB/setup %}
