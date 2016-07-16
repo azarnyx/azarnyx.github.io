@@ -1,0 +1,3 @@
+User-agent: *
+Host: https://azarnyx.github.io
+Sitemap: https://azarnyx.github.io/sitemap.xml
