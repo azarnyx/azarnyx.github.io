@@ -11,7 +11,7 @@ So together with my friend, we thought how to create such a ranking. The best id
 
 We used the [web-of-science database][ws] and wrote a small [script in Python][ga]. On the [web-of-science search tool][ws] one can set different types of filters, such as choosing location, field and years of publications.
 
-![alt text](pic/wos.png "Logo Title Text 1")
+![](https://azarnyx.github.io/pic/wos.png )
 
 
 The search results could be downlowded in txt files. The inconvinience
@@ -19,7 +19,7 @@ is due to WoS allow to download up to 500 records at once, so to search through
 10000 different publications one needs to press download button 20
 times.
 
-![alt text](pic/wos_save.png "Logo Title Text 1")
+![](https://azarnyx.github.io/pic/wos_save.png)
 
 After results are stored in the folder `FOLDER`, just simply type in command line:
 
@@ -72,7 +72,7 @@ Web Of Science search with `Analyze Results` button, however it
 searches through all results rather than through 10000 most cited
 results as was used so it gave somehow different output:
 
-![alt text](pic/wos_ml.png "Logo Title Text 1")
+![alt text](https://azarnyx.github.io/pic/wos_ml.png "Logo Title Text 1")
 
 The WoS output still could be modified by accurate setting of filters.
 
