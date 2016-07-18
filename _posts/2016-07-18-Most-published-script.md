@@ -11,7 +11,7 @@ So together with my friend, we thought how to create such a ranking. The best id
 
 We used the [web-of-science database][ws] and wrote a small [script in Python][ga]. On the [web-of-science search tool][ws] one can set different types of filters, such as choosing location, field and years of publications.
 
-![alt text](pic/wos_small.png "Logo Title Text 1")
+![alt text](pic/wos.png "Logo Title Text 1")
 
 
 The search results could be downlowded in txt files. The inconvinience
