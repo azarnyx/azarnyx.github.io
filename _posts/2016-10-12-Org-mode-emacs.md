@@ -155,5 +155,5 @@ following strings to your emacs configuration file:
 
 #### TODOs
 
-* It is still not clear for me how to set up synchonization with Google
+* It is still not clear for me how to set up synchronization with Google
 Calendars Tasks.
