@@ -11773,26 +11773,190 @@ div#notebook {
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="from-IPython.display-import-display">from IPython.display import display<a class="anchor-link" href="#from-IPython.display-import-display">&#182;</a></h3><p>from bokeh.plotting import figure, output_notebook, show, output_file
-output_notebook()</p>
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1">### from IPython.display import display</span>
+<span class="kn">from</span> <span class="nn">bokeh.plotting</span> <span class="kn">import</span> <span class="n">figure</span><span class="p">,</span> <span class="n">output_notebook</span><span class="p">,</span> <span class="n">show</span><span class="p">,</span> <span class="n">output_file</span>
+<span class="n">output_notebook</span><span class="p">()</span>
+</pre></div>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+
+<div class="output_html rendered_html output_subarea ">
+
+    <div class="bk-root">
+        <a href="http://bokeh.pydata.org" target="_blank" class="bk-logo bk-logo-small bk-logo-notebook"></a>
+        <span id="7b566ef2-c6eb-4a49-af9b-734257b9527c">Loading BokehJS ...</span>
+    </div>
 </div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Response-on-the-comment-of-the-Second-referee-&#8211;-EY11259/AZARNYKH">Response on the comment of the Second referee &#8211; EY11259/AZARNYKH<a class="anchor-link" href="#Response-on-the-comment-of-the-Second-referee-&#8211;-EY11259/AZARNYKH">&#182;</a></h1><p>In the analysis of the paper, we use the analytical derivation of CACF of non-interacting particles governed by Langevin equations. In the case of additional force between the particles, for example, a force due to Lennard-Jones potential, the analytical expressions for CACF are much more challenging to derive. In Figure 1 it is shown, that CACF of LE can be accurately measured in simulations. For that reason, the analysis provided in the paper can be extended to systems with repulsive potential. One can compare simulations of Langevin thermostat with the certain interaction between particles against DPD thermostat with the same interaction. We speculate that for the large wavenumbers this simulation will give the same results. Moreover, it is possible that for DPD with classical potential [ R. D. Groot and P. B. Warren, The Journal of Chemical Physics 107 (1997), <a href="http://dx.doi.org/10.1063/1.474784">doi:10.1063/1.474784</a> ] the same scaling law as for DPD without potential will be observed.</p>
+
+</div>
+
+<div class="output_area">
+<div class="prompt"></div>
+
+
+
+
+<div id="ad2f0c51-7fcf-4040-9cd0-a65bed4ba9ad"></div>
+<div class="output_subarea output_javascript ">
+<script type="text/javascript">
+var element = $('#ad2f0c51-7fcf-4040-9cd0-a65bed4ba9ad');
+
+(function(global) {
+  function now() {
+    return new Date();
+  }
+
+  var force = true;
+
+  if (typeof (window._bokeh_onload_callbacks) === "undefined" || force === true) {
+    window._bokeh_onload_callbacks = [];
+    window._bokeh_is_loading = undefined;
+  }
+
+
+  
+  if (typeof (window._bokeh_timeout) === "undefined" || force === true) {
+    window._bokeh_timeout = Date.now() + 5000;
+    window._bokeh_failed_load = false;
+  }
+
+  var NB_LOAD_WARNING = {'data': {'text/html':
+     "<div style='background-color: #fdd'>\n"+
+     "<p>\n"+
+     "BokehJS does not appear to have successfully loaded. If loading BokehJS from CDN, this \n"+
+     "may be due to a slow or bad network connection. Possible fixes:\n"+
+     "</p>\n"+
+     "<ul>\n"+
+     "<li>re-rerun `output_notebook()` to attempt to load from CDN again, or</li>\n"+
+     "<li>use INLINE resources instead, as so:</li>\n"+
+     "</ul>\n"+
+     "<code>\n"+
+     "from bokeh.resources import INLINE\n"+
+     "output_notebook(resources=INLINE)\n"+
+     "</code>\n"+
+     "</div>"}};
+
+  function display_loaded() {
+    if (window.Bokeh !== undefined) {
+      document.getElementById("7b566ef2-c6eb-4a49-af9b-734257b9527c").textContent = "BokehJS successfully loaded.";
+    } else if (Date.now() < window._bokeh_timeout) {
+      setTimeout(display_loaded, 100)
+    }
+  }
+
+  function run_callbacks() {
+    window._bokeh_onload_callbacks.forEach(function(callback) { callback() });
+    delete window._bokeh_onload_callbacks
+    console.info("Bokeh: all callbacks have finished");
+  }
+
+  function load_libs(js_urls, callback) {
+    window._bokeh_onload_callbacks.push(callback);
+    if (window._bokeh_is_loading > 0) {
+      console.log("Bokeh: BokehJS is being loaded, scheduling callback at", now());
+      return null;
+    }
+    if (js_urls == null || js_urls.length === 0) {
+      run_callbacks();
+      return null;
+    }
+    console.log("Bokeh: BokehJS not loaded, scheduling load and callback at", now());
+    window._bokeh_is_loading = js_urls.length;
+    for (var i = 0; i < js_urls.length; i++) {
+      var url = js_urls[i];
+      var s = document.createElement('script');
+      s.src = url;
+      s.async = false;
+      s.onreadystatechange = s.onload = function() {
+        window._bokeh_is_loading--;
+        if (window._bokeh_is_loading === 0) {
+          console.log("Bokeh: all BokehJS libraries loaded");
+          run_callbacks()
+        }
+      };
+      s.onerror = function() {
+        console.warn("failed to load library " + url);
+      };
+      console.log("Bokeh: injecting script tag for BokehJS library: ", url);
+      document.getElementsByTagName("head")[0].appendChild(s);
+    }
+  };var element = document.getElementById("7b566ef2-c6eb-4a49-af9b-734257b9527c");
+  if (element == null) {
+    console.log("Bokeh: ERROR: autoload.js configured with elementid '7b566ef2-c6eb-4a49-af9b-734257b9527c' but no matching script tag was found. ")
+    return false;
+  }
+
+  var js_urls = ["https://cdn.pydata.org/bokeh/release/bokeh-0.12.4.min.js", "https://cdn.pydata.org/bokeh/release/bokeh-widgets-0.12.4.min.js"];
+
+  var inline_js = [
+    function(Bokeh) {
+      Bokeh.set_log_level("info");
+    },
+    
+    function(Bokeh) {
+      
+      document.getElementById("7b566ef2-c6eb-4a49-af9b-734257b9527c").textContent = "BokehJS is loading...";
+    },
+    function(Bokeh) {
+      console.log("Bokeh: injecting CSS: https://cdn.pydata.org/bokeh/release/bokeh-0.12.4.min.css");
+      Bokeh.embed.inject_css("https://cdn.pydata.org/bokeh/release/bokeh-0.12.4.min.css");
+      console.log("Bokeh: injecting CSS: https://cdn.pydata.org/bokeh/release/bokeh-widgets-0.12.4.min.css");
+      Bokeh.embed.inject_css("https://cdn.pydata.org/bokeh/release/bokeh-widgets-0.12.4.min.css");
+    }
+  ];
+
+  function run_inline_js() {
+    
+    if ((window.Bokeh !== undefined) || (force === true)) {
+      for (var i = 0; i < inline_js.length; i++) {
+        inline_js[i](window.Bokeh);
+      }if (force === true) {
+        display_loaded();
+      }} else if (Date.now() < window._bokeh_timeout) {
+      setTimeout(run_inline_js, 100);
+    } else if (!window._bokeh_failed_load) {
+      console.log("Bokeh: BokehJS failed to load within specified timeout.");
+      window._bokeh_failed_load = true;
+    } else if (force !== true) {
+      var cell = $(document.getElementById("7b566ef2-c6eb-4a49-af9b-734257b9527c")).parents('.cell').data().cell;
+      cell.output_area.append_execute_result(NB_LOAD_WARNING)
+    }
+
+  }
+
+  if (window._bokeh_is_loading === 0) {
+    console.log("Bokeh: BokehJS loaded, going straight to plotting");
+    run_inline_js();
+  } else {
+    load_libs(js_urls, function() {
+      console.log("Bokeh: BokehJS plotting callback run at", now());
+      run_inline_js();
+    });
+  }
+}(this));
+</script>
+</div>
+
+</div>
 
 </div>
 </div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -11808,7 +11972,7 @@ conservative force.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">HTML</span>
@@ -11898,7 +12062,7 @@ conservative force.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span>
@@ -11924,7 +12088,7 @@ conservative force.</p>
 
     <div class="bk-root">
         <a href="http://bokeh.pydata.org" target="_blank" class="bk-logo bk-logo-small bk-logo-notebook"></a>
-        <span id="eb9476c0-a2ad-4a56-b855-3da93306df86">Loading BokehJS ...</span>
+        <span id="1ee7416e-f855-42b8-aa65-30c7413b2560">Loading BokehJS ...</span>
     </div>
 </div>
 
@@ -11936,10 +12100,10 @@ conservative force.</p>
 
 
 
-<div id="9774cf14-2a22-4b64-b694-8eae07bfa0cf"></div>
+<div id="a1240402-27ab-4575-a01d-1216f4f0394c"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#9774cf14-2a22-4b64-b694-8eae07bfa0cf');
+var element = $('#a1240402-27ab-4575-a01d-1216f4f0394c');
 
 (function(global) {
   function now() {
@@ -11978,7 +12142,7 @@ var element = $('#9774cf14-2a22-4b64-b694-8eae07bfa0cf');
 
   function display_loaded() {
     if (window.Bokeh !== undefined) {
-      document.getElementById("eb9476c0-a2ad-4a56-b855-3da93306df86").textContent = "BokehJS successfully loaded.";
+      document.getElementById("1ee7416e-f855-42b8-aa65-30c7413b2560").textContent = "BokehJS successfully loaded.";
     } else if (Date.now() < window._bokeh_timeout) {
       setTimeout(display_loaded, 100)
     }
@@ -12020,9 +12184,9 @@ var element = $('#9774cf14-2a22-4b64-b694-8eae07bfa0cf');
       console.log("Bokeh: injecting script tag for BokehJS library: ", url);
       document.getElementsByTagName("head")[0].appendChild(s);
     }
-  };var element = document.getElementById("eb9476c0-a2ad-4a56-b855-3da93306df86");
+  };var element = document.getElementById("1ee7416e-f855-42b8-aa65-30c7413b2560");
   if (element == null) {
-    console.log("Bokeh: ERROR: autoload.js configured with elementid 'eb9476c0-a2ad-4a56-b855-3da93306df86' but no matching script tag was found. ")
+    console.log("Bokeh: ERROR: autoload.js configured with elementid '1ee7416e-f855-42b8-aa65-30c7413b2560' but no matching script tag was found. ")
     return false;
   }
 
@@ -12035,7 +12199,7 @@ var element = $('#9774cf14-2a22-4b64-b694-8eae07bfa0cf');
     
     function(Bokeh) {
       
-      document.getElementById("eb9476c0-a2ad-4a56-b855-3da93306df86").textContent = "BokehJS is loading...";
+      document.getElementById("1ee7416e-f855-42b8-aa65-30c7413b2560").textContent = "BokehJS is loading...";
     },
     function(Bokeh) {
       console.log("Bokeh: injecting CSS: https://cdn.pydata.org/bokeh/release/bokeh-0.12.4.min.css");
@@ -12058,7 +12222,7 @@ var element = $('#9774cf14-2a22-4b64-b694-8eae07bfa0cf');
       console.log("Bokeh: BokehJS failed to load within specified timeout.");
       window._bokeh_failed_load = true;
     } else if (force !== true) {
-      var cell = $(document.getElementById("eb9476c0-a2ad-4a56-b855-3da93306df86")).parents('.cell').data().cell;
+      var cell = $(document.getElementById("1ee7416e-f855-42b8-aa65-30c7413b2560")).parents('.cell').data().cell;
       cell.output_area.append_execute_result(NB_LOAD_WARNING)
     }
 
@@ -12142,7 +12306,7 @@ var element = $('#9774cf14-2a22-4b64-b694-8eae07bfa0cf');
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">HTML</span>
@@ -12171,7 +12335,7 @@ var element = $('#9774cf14-2a22-4b64-b694-8eae07bfa0cf');
 
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[42]:</div>
+<div class="prompt output_prompt">Out[4]:</div>
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
